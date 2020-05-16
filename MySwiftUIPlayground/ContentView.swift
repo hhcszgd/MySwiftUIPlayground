@@ -15,32 +15,33 @@ struct ContentView: View {
         TabView( selection: $tabBarControl.tabBarIndex) {
             
             HomePage()
-                .tag(0)
+                .tag(TabPageType.home.rawValue)
                 .tabItem {
                     Image(systemName: "1.square.fill")
                     Text("Home")
                 }
             
             ShopCartPage()
-                .tag(1)
+                .tag(TabPageType.shopcart.rawValue)
                 .tabItem {
                     Image(systemName: "2.square.fill")
                     Text("Shopcart")
                 }
             
             BasicUsage( )
-                .tag(2)
+                .tag(TabPageType.other.rawValue)
                 .tabItem {
                     Image(systemName: "3.square.fill")
                     Text("Basic Usage")
                 }
             
             ProfilePage()
-            .tag(3)
+            .tag(TabPageType.profile.rawValue)
             .tabItem {
                 Image(systemName: "4.square.fill")
                 Text("Profile")
             }
+            .hidden()
             
             
         }
