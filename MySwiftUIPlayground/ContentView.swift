@@ -33,7 +33,7 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "3.square.fill")
                     Text("Basic Usage")
-                }
+            }
             
             ProfilePage()
             .tag(TabPageType.profile.rawValue)
@@ -41,16 +41,16 @@ struct ContentView: View {
                 Image(systemName: "4.square.fill")
                 Text("Profile")
             }
-            .hidden()
             
             
-        }
+            }
+        .accentColor(.orange)// color while tab bar item be choosed
         .font(.headline)
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+       ContentView(tabBarControl: TabControl.share)
+    }
+}

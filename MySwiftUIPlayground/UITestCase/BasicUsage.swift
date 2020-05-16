@@ -18,13 +18,18 @@ struct BasicUsage: View {
                 }
             }
             .navigationBarTitle("Test Cases", displayMode: NavigationBarItem.TitleDisplayMode.inline)
+            .navigationBarItems(
+                leading: Text("2"),
+                trailing: Text("1")
+            )
+            
         }
         
     }
 }
-//struct BasicUsage_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BasicUsage(index: <#T##Binding<Int>#>)
-////        Text("ssssss")
-//    }
-//}
+struct BasicUsage_Previews: PreviewProvider {
+    static var previews: some View {
+        BasicUsage()
+//        Text("ssssss")
+    }
+}

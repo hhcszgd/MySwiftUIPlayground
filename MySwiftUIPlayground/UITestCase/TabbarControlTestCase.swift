@@ -39,6 +39,16 @@ struct TabbarControlTestCase: View {
         }
         .onDisappear {  }
         .navigationBarTitle("Basic Usage of swiftUI", displayMode: NavigationBarItem.TitleDisplayMode.inline)
+    .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button(action: {
+                TabControl.share.changeTabbar(pageType: TabPageType.other)
+            }, label: {
+                Text("fan hui")
+            })
+        )
+        
+        
     }
 }
 
