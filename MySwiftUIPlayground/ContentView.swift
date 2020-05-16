@@ -7,15 +7,49 @@
 //
 
 import SwiftUI
-
+import SDWebImageSwiftUI
+import Combine
 struct ContentView: View {
+    @ObservedObject var tabBarControl: TabControl
     var body: some View {
-        Text("Hello, World!")
+        TabView( selection: $tabBarControl.tabBarIndex) {
+            
+            HomePage()
+                .tag(0)
+                .tabItem {
+                    Image(systemName: "1.square.fill")
+                    Text("Home")
+                }
+            
+            ShopCartPage()
+                .tag(1)
+                .tabItem {
+                    Image(systemName: "2.square.fill")
+                    Text("Shopcart")
+                }
+            
+            BasicUsage( )
+                .tag(2)
+                .tabItem {
+                    Image(systemName: "3.square.fill")
+                    Text("Basic Usage")
+                }
+            
+            ProfilePage()
+            .tag(3)
+            .tabItem {
+                Image(systemName: "4.square.fill")
+                Text("Profile")
+            }
+            
+            
+        }
+        .font(.headline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

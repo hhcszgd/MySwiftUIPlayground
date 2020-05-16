@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		B3591EEE246E412B0097810A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3591EEC246E412B0097810A /* LaunchScreen.storyboard */; };
 		B3591EF9246E412B0097810A /* MySwiftUIPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3591EF8246E412B0097810A /* MySwiftUIPlaygroundTests.swift */; };
 		B3591F04246E412B0097810A /* MySwiftUIPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3591F03246E412B0097810A /* MySwiftUIPlaygroundUITests.swift */; };
+		B3591F13246E58F10097810A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B3591F12246E58F10097810A /* SDWebImageSwiftUI */; };
+		B3591F17246E65530097810A /* BasicUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3591F16246E65530097810A /* BasicUsage.swift */; };
+		B3591F1C246ECE940097810A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3591F1B246ECE940097810A /* HomePage.swift */; };
+		B3591F1E246ECE9F0097810A /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3591F1D246ECE9F0097810A /* ProfilePage.swift */; };
+		B3591F20246ECEB20097810A /* ShopCartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3591F1F246ECEB20097810A /* ShopCartPage.swift */; };
+		B3591F23246ED0270097810A /* TabControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3591F22246ED0270097810A /* TabControl.swift */; };
+		B3F4B100246F6196003190D1 /* TabbarControlTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F4B0FF246F6196003190D1 /* TabbarControlTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		B3591EFF246E412B0097810A /* MySwiftUIPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUIPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3591F03246E412B0097810A /* MySwiftUIPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIPlaygroundUITests.swift; sourceTree = "<group>"; };
 		B3591F05246E412B0097810A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3591F14246E59D60097810A /* MySwiftUIPlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySwiftUIPlayground.entitlements; sourceTree = "<group>"; };
+		B3591F16246E65530097810A /* BasicUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUsage.swift; sourceTree = "<group>"; };
+		B3591F1B246ECE940097810A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		B3591F1D246ECE9F0097810A /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		B3591F1F246ECEB20097810A /* ShopCartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCartPage.swift; sourceTree = "<group>"; };
+		B3591F22246ED0270097810A /* TabControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabControl.swift; sourceTree = "<group>"; };
+		B3F4B0FF246F6196003190D1 /* TabbarControlTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarControlTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3591F13246E58F10097810A /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +114,10 @@
 		B3591EE0246E41290097810A /* MySwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				B3F4B0FE246F615C003190D1 /* Pages */,
+				B3591F21246ED00E0097810A /* DataFlow */,
+				B3591F15246E65040097810A /* UITestCase */,
+				B3591F14246E59D60097810A /* MySwiftUIPlayground.entitlements */,
 				B3591EE1246E41290097810A /* AppDelegate.swift */,
 				B3591EE3246E41290097810A /* SceneDelegate.swift */,
 				B3591EE5246E41290097810A /* ContentView.swift */,
@@ -136,6 +155,33 @@
 			path = MySwiftUIPlaygroundUITests;
 			sourceTree = "<group>";
 		};
+		B3591F15246E65040097810A /* UITestCase */ = {
+			isa = PBXGroup;
+			children = (
+				B3591F16246E65530097810A /* BasicUsage.swift */,
+				B3F4B0FF246F6196003190D1 /* TabbarControlTestCase.swift */,
+			);
+			path = UITestCase;
+			sourceTree = "<group>";
+		};
+		B3591F21246ED00E0097810A /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B3591F22246ED0270097810A /* TabControl.swift */,
+			);
+			path = DataFlow;
+			sourceTree = "<group>";
+		};
+		B3F4B0FE246F615C003190D1 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B3591F1B246ECE940097810A /* HomePage.swift */,
+				B3591F1D246ECE9F0097810A /* ProfilePage.swift */,
+				B3591F1F246ECEB20097810A /* ShopCartPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +198,9 @@
 			dependencies = (
 			);
 			name = MySwiftUIPlayground;
+			packageProductDependencies = (
+				B3591F12246E58F10097810A /* SDWebImageSwiftUI */,
+			);
 			productName = MySwiftUIPlayground;
 			productReference = B3591EDE246E41290097810A /* MySwiftUIPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +273,9 @@
 				Base,
 			);
 			mainGroup = B3591ED5246E41290097810A;
+			packageReferences = (
+				B3591F11246E58F10097810A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = B3591EDF246E41290097810A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,8 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3591F1E246ECE9F0097810A /* ProfilePage.swift in Sources */,
+				B3591F1C246ECE940097810A /* HomePage.swift in Sources */,
+				B3591F20246ECEB20097810A /* ShopCartPage.swift in Sources */,
+				B3F4B100246F6196003190D1 /* TabbarControlTestCase.swift in Sources */,
+				B3591F23246ED0270097810A /* TabControl.swift in Sources */,
 				B3591EE2246E41290097810A /* AppDelegate.swift in Sources */,
 				B3591EE4246E41290097810A /* SceneDelegate.swift in Sources */,
+				B3591F17246E65530097810A /* BasicUsage.swift in Sources */,
 				B3591EE6246E41290097810A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySwiftUIPlayground/MySwiftUIPlayground.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MySwiftUIPlayground/Preview Content\"";
 				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
@@ -445,6 +504,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hhcszgd.MySwiftUIPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySwiftUIPlayground/MySwiftUIPlayground.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MySwiftUIPlayground/Preview Content\"";
 				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
@@ -465,6 +526,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hhcszgd.MySwiftUIPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -594,6 +656,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3591F11246E58F10097810A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3591F12246E58F10097810A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3591F11246E58F10097810A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3591ED6246E41290097810A /* Project object */;
 }
